@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">CAT CARE</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_artikel1">Artikel1</string>
+    <string name="menu_artikel2">Artikel2</string>
+    <string name="menu_artikel3">Artikel3</string>
+    <string name="menu_rate">Rate This App</string>
+    <string name="menu_send">Send</string>
+    <string name="about">About</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="versi_1_0_0">Versi 1.0.0</string>
+    <string name="wlcm">Selamat Datang</string>
+    <string name="pembukaan">Pembukaan</string>
+    <string name="desc">Desc</string>
+    <string name="heading">heading</string>
+    <string name="next">Next</string>
+    <string name="back">back</string>
+    <string name="finish">finish</string>
+    <string name="desc1">Desc</string>
+    <string name="title1">title2</string>
+    <string name="title2">title2</string>
+    <string name="desc2">desc2</string>
+    <string name="skip">skip</string>
+    <string name="kucing">Kucing</string>
+    <string name="halaman_1">Halaman 1</string>
+    <string name="coba">Coba</string>
+    <string name="coba2">Coba2</string>
+    <string name="anak_kucing">Anak Kucing</string>
+    <string name="kucing_remaja">Kucing Remaja</string>
+    <string name="kucing_dewasa">Kucing Dewasa</string>
+    <string name="intro">Menu</string>
+    <string name="video">Video</string>
+    <string name="gambar">Gambar</string>
+    <string name="list1">List Artikel Anak Kucing</string>
+    <string name="todo">TODO</string>
+    <string name="kembali">Kembali</string>
+    <string name="api">AIzaSyDMFaaD5JEVVpyPW0hT9DTWbPQQkcoIBJY</string>
+    <string name="artikel">Artikel</string>
+    <string name="seting">Setting</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="ad">Admin</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="gmbr">Gambar</string>
+    <string name="as">Artikel</string>
+    <string name="sda">Video</string>
+    <string name="menu_admin">Menu Admin</string>
+    <string name="ng">Menu Gambar</string>
+    <string name="kucing_putih">Kucing Putih</string>
+    <string name="kucing_orange">Kucing Orange</string>
+    <string name="kucing_hitam">Kucing Hitam</string>
+    <string name="edit">Edit</string>
+    <string name="ed">Edit</string>
+    <string name="tb">Tambah</string>
+    <string name="up">Update</string>
+    <string name="versi_0_0_7">Versi 0.0.7</string>
+    <string name="ccc">Cat Care</string>
+
+    <!--  we need to use video ids instead of video link  -->
+    <string-array name="video_id_array">
+        <item>CqhpNxI8qYw</item>
+        <item>sasCrpgHDy8</item>
+        <item>iJeh3x09Ya8</item>
+        <item>B5zRaD7B504</item>
+        <item>9qWHzj8k-Uo</item>
+        <item>RjiK45wC924</item>
+        <item>RH3zaLO8H4E</item>
+        <item>o14pyzosjvk</item>
+        <item>5SQrpBQne7A</item>
+        <item>5WJ3r67ORxo</item>
+    </string-array>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_artikel"
+            android:icon="@drawable/artikel"
+            android:title="@string/artikel" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/poto"
+            android:title="@string/gambar" />
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/video"
+            android:title="@string/video" />
+    </group>
+
+    <item android:title="@string/about">
+        <menu>
+            <item
+                android:id="@+id/nav_admin"
+                android:icon="@drawable/android"
+                android:title="@string/ad" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/android"
+                android:title="@string/menu_rate" />
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/help"
+                android:title="@string/about" />
+        </menu>
+    </item>
+
+</menu>
