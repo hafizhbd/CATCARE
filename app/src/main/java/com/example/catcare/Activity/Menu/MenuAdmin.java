@@ -73,5 +73,6 @@ startActivity(PilihanArtikelActivity);
             startActivity(kembali);
         }
     });
+
     }
     }

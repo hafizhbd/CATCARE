@@ -22,17 +22,32 @@ versi 0.0.7 31 Juli 2019
 1. Mempercantik UI.
 */
 public class DataModels {
-
+    private String name;
     private String image_url;
 
-    //Konstruktor kosong, untuk data snapshot pada Firebase Realtime Database
-    public DataModels() {}
+    public DataModels() {
+        // Default constructor required for calls to DataSnapshot.getValue(User.class)
+    }
+    public String getName() {
+        return name;
+    }
 
-    public DataModels(String image_url) {
-        this.image_url = image_url;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getImage_url() {
         return image_url;
     }
+
+    public void setImage_url(String image_url) {
+        this.image_url = image_url;
+    }
+
+    public DataModels(String name, String image_url) {
+        this.name = name;
+        this.image_url = image_url;
+    }
+//Konstruktor kosong, untuk data snapshot pada Firebase Realtime Database
+
 }

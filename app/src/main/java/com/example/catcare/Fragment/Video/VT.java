@@ -14,6 +14,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.catcare.Adapter.VideoAdapter;
+import com.example.catcare.Fragment.Menu.Gambar;
+import com.example.catcare.Fragment.Menu.Video;
 import com.example.catcare.Model.YouTubeVideos;
 import com.example.catcare.R;
 
@@ -46,7 +48,7 @@ versi 0.0.7 31 Juli 2019
  * A simple {@link Fragment} subclass.
  */
 public class VT extends Fragment {
-
+private Button back;
     public VT() {
         // Required empty public constructor
     }
@@ -55,6 +57,7 @@ public class VT extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_vt, container, false);
+        back = (Button) view.findViewById(R.id.button);
         getActivity().setTitle("VIDEO TUTORIAL");
         final List<YouTubeVideos> youtubeVideos = new ArrayList<>();
         youtubeVideos.add(new YouTubeVideos("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/OAGfx7eB3gA\"" +
@@ -72,7 +75,19 @@ public class VT extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.smoothScrollToPosition(recyclerView.getBottom());
         recyclerView.setAdapter(videoAdapter);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Video root = new Video();
+
+                getFragmentManager().beginTransaction().replace(R.id.frame_container, root)
+                        .addToBackStack(null)
+                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).commit();
+            }
+        });
         return view;
     }
+
+
 }
 

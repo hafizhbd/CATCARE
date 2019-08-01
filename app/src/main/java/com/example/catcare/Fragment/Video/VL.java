@@ -1,6 +1,7 @@
 package com.example.catcare.Fragment.Video;
 
 
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 
 import android.app.Fragment;
@@ -10,8 +11,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.catcare.Adapter.VideoAdapter;
+import com.example.catcare.Fragment.Menu.Video;
 import com.example.catcare.Model.YouTubeVideos;
 import com.example.catcare.R;
 
@@ -43,7 +46,7 @@ versi 0.0.7 31 Juli 2019
  * A simple {@link Fragment} subclass.
  */
 public class VL extends Fragment {
-
+    private Button back;
 
     public VL() {
         // Required empty public constructor
@@ -55,6 +58,7 @@ public class VL extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_vl, container, false);
         getActivity().setTitle("VIDEO FUNNY");
+        back = (Button) view.findViewById(R.id.button);
         final List<YouTubeVideos> youtubeVideos = new ArrayList<>();
         youtubeVideos.add(new YouTubeVideos("<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/WEkSYw3o5is\"" +
                 " frameborder=\"0\" allowfullscreen></iframe>"));
@@ -71,6 +75,16 @@ public class VL extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.smoothScrollToPosition(recyclerView.getBottom());
         recyclerView.setAdapter(videoAdapter);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Video root = new Video();
+
+                getFragmentManager().beginTransaction().replace(R.id.frame_container, root)
+                        .addToBackStack(null)
+                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).commit();
+            }
+        });
         return view;
     }
 }
