@@ -26,7 +26,7 @@
                 android:title="@string/ad" />
             <item
                 android:id="@+id/nav_rate"
-                android:icon="@drawable/android"
+                android:icon="@drawable/rate"
                 android:title="@string/menu_rate" />
             <item
                 android:id="@+id/nav_help"

@@ -15,7 +15,6 @@ import android.app.FragmentTransaction;
 
 import com.example.catcare.Fragment.Artikel.AnakFragment;
 import com.example.catcare.Fragment.Artikel.DewasaFragment;
-import com.example.catcare.Fragment.Artikel.RemajaFragment;
 import com.example.catcare.R;
 /*
 AKB 2 10116060 Muhammad Hafizh Budiman
@@ -42,7 +41,7 @@ versi 0.0.7 31 Juli 2019
 public class Root extends Fragment {
     ListView listview;
     String e[] = {
-            "Anak Kucing", "Kucing Remaja", "Kucing Dewasa"
+            "Anak Kucing","Kucing Dewasa"
 
     };
     public Root() {
@@ -79,12 +78,6 @@ public class Root extends Fragment {
                     ft.replace(R.id.frame_container, llf);
                     ft.commit();
                 } else if (p == 1) {
-                    FragmentManager fm = getFragmentManager();
-                    FragmentTransaction ft = fm.beginTransaction();
-                    RemajaFragment llf = new RemajaFragment();
-                    ft.replace(R.id.frame_container, llf);
-                    ft.commit();
-                } else if (p == 2) {
                     FragmentManager fm = getFragmentManager();
                     FragmentTransaction ft = fm.beginTransaction();
                     DewasaFragment llf = new DewasaFragment();

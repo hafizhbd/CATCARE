@@ -16,7 +16,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.Tema">
         <activity android:name=".Activity.Fun.AddArtikelC" />
-        <activity android:name=".Activity.Fun.AddArtikelB" />
         <activity android:name=".Activity.Menu.PilihanArtikelActivity" />
         <activity android:name=".Activity.Fun.AddArtikelA" />
         <activity

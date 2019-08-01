@@ -10,7 +10,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 import com.example.catcare.Activity.Fun.AddArtikelA;
-import com.example.catcare.Activity.Fun.AddArtikelB;
 import com.example.catcare.Activity.Fun.AddArtikelC;
 import com.example.catcare.R;
 /*
@@ -46,10 +45,8 @@ public class PilihanArtikelActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pilihan_artikel);
         btnkembali = (Button) findViewById(R.id.kembali);
         btnanak    = (Button) findViewById(R.id.button1);
-        btnremaja  = (Button) findViewById(R.id.button2);
-        btndewasa  = (Button) findViewById(R.id.button3);
+        btndewasa  = (Button) findViewById(R.id.button2);
         AddartikelA = new Intent(this, AddArtikelA.class);
-        AddartikelB = new Intent(this, AddArtikelB.class);
         AddartikelC = new Intent(this, AddArtikelC.class);
         kembali = new Intent(this,MenuAdmin.class);
         btnanak.setOnClickListener(new View.OnClickListener() {
@@ -68,12 +65,6 @@ public class PilihanArtikelActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(AddartikelA);
-            }
-        });
-        btnremaja.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(AddartikelB);
             }
         });
         btndewasa.setOnClickListener(new View.OnClickListener() {

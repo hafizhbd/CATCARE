@@ -27,23 +27,12 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="129dp"
         android:background="@drawable/tmbl"
-        android:text="@string/kucing_remaja"
+        android:text="@string/kucing_dewasa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="52dp" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="395dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="181dp"
-        android:background="@drawable/tmbl"
-        android:text="@string/kucing_dewasa"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="170dp" />
+
 
     <Button
         android:id="@+id/kembali"
